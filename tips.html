@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentExplorer - Tips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🦷 DentExplorer</h1>
+    <p>Explore Dental Tips</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tips.html">Tips</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+
+  </nav>
+
+  <<input type="text" id="searchBox" placeholder="Search tips...">
+<ul id="tipsList">
+  <li>Brush twice a day</li>
+  <li>Floss daily</li>
+  <li>Drink plenty of water</li>
+</ul>
+
+<script>
+const searchBox = document.getElementById("searchBox");
+const tips = document.querySelectorAll("#tipsList li");
+
+searchBox.addEventListener("input", function() {
+  const text = searchBox.value.toLowerCase();
+  tips.forEach(tip => {
+    tip.style.display = tip.textContent.toLowerCase().includes(text) ? "" : "none";
+  });
+});
+</script>>
+    <h2>Daily Dental Tips</h2>
+    <ul>
+      <li>Brush twice a day with fluoride toothpaste.</li>
+      <li>Floss daily to remove hidden food particles.</li>
+      <li>Visit your dentist every 6 months.</li>
+      <li>Limit sugary foods and drinks.</li>
+      <li>Drink plenty of water for oral hydration.</li>
+    </ul>
+  </<input type="text" id="searchBox" placeholder="Search tips...">
+<ul id="tipsList">
+  <li>Brush twice a day</li>
+  <li>Floss daily</li>
+  <li>Drink plenty of water</li>
+</ul>
+
+<script>
+const searchBox = document.getElementById("searchBox");
+const tips = document.querySelectorAll("#tipsList li");
+
+searchBox.addEventListener("input", function() {
+  const text = searchBox.value.toLowerCase();
+  tips.forEach(tip => {
+    tip.style.display = tip.textContent.toLowerCase().includes(text) ? "" : "none";
+  });
+});
+</script>>
+
+  <footer>
+    <p>© 2025 DentExplorer</p>
+  </footer>
+</body>
+</<iframe width="350" height="200" 
+src="https://www.youtube.com/embed/VIDEO_ID" 
+frameborder="0" allowfullscreen></iframe>>
