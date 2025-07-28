@@ -3,47 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DentExplorer</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dentexplorer | Dental Knowledge Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #3bb9ff, #ffffff);
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 8px;
+    }
+    nav {
+      background: #023e8a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #90e0ef;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      color: #0077b6;
+      font-size: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #0096c7;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #00b4d8;
+    }
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <<header>
-  <img src="logo.png" alt="DentExplorer Logo" width="80">
-  <h1>🦷 DentExplorer</h1>
-  <p>Explore the World of Dentistry with Dr. Jitendra Kumar</p>
-</header>
-  <img src="logo.png" alt="DentExplorer Logo" width="80">
-  <h1>🦷 DentExplorer</h1>
-  <p>Explore the World of Dentistry</p>
-</header>>
-    <h1>🦷 DentExplorer</h1>
-    <p>Explore the World of Dentistry with Dr. Jitendra Kumar</p>
+  <header>
+    <h1>Welcome to Dentexplorer</h1>
+    <p>Your Guide to Easy & Smart Dental Learning</p>
   </header>
 
-  <<nav>
-  <a href="index.html">Home</a>
-  <a href="tips.html">Tips</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-
-</nav>>
+  <nav>
     <a href="#">Home</a>
+    <a href="#">Notes</a>
     <a href="#">Tips</a>
-    <a href="#">About</a>
     <a href="#">Contact</a>
   </nav>
 
-  <main>
-    <h2>Welcome to DentExplorer!</h2>
-    <p>This website shares dental tips, myths vs facts, and student-friendly notes to make dentistry easier to understand.</p>
-    <button onclick="sayHello()">Click for Greeting</button>
-  </main>
+  <section>
+    <h2>Explore the World of Dentistry</h2>
+    <p>
+      Dentexplorer is your one-stop platform for dental students and professionals.  
+      Access simplified notes, clinical tips, and myth-busting facts — all in one place!
+    </p>
+    <a href="#" class="btn">Start Exploring</a>
+  </section>
 
   <footer>
-    <p>© 2025 DentExplorer | Designed by Dr. Jitendra Kumar</p>
+    <p>© 2025 Dentexplorer | Designed by Dr. Jitendra Kumar</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
