@@ -3,73 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DentExplorer - Tips</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dental Health Tips - Dental Explorer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* Section Common Styles */
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.4em;
+      color: #0072ff;
+      margin-bottom: 30px;
+    }
+
+    /* Tips Section */
+    .tips-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .tip {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease;
+    }
+    .tip:hover {
+      transform: translateY(-7px);
+    }
+    .tip-number {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #0072ff;
+    }
+    .tip h3 {
+      margin-top: 10px;
+      font-size: 1.3em;
+      color: #0072ff;
+    }
+    .tip p {
+      margin: 10px 0 0;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    /* Products Section */
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.25s ease;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .product h3 {
+      font-size: 1.3em;
+      color: #0072ff;
+      margin-bottom: 10px;
+    }
+    .product p {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>🦷 DentExplorer</h1>
-    <p>Explore Dental Tips</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="tips.html">Tips</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-      <a href="gallery.html">Gallery</a>
+  <!-- Header -->
+  <div class="header">
+    <h1>Dental Health Tips & Innovations</h1>
+    <p>Your guide to maintaining a healthy smile and staying updated with the latest dental care products.</p>
+  </div>
 
-  </nav>
+  <!-- Dental Health Tips -->
+  <section>
+    <h2>Essential Dental Health Tips</h2>
+    <div class="tips-container">
+      <div class="tip">
+        <div class="tip-number">1</div>
+        <h3>Brush Twice Daily</h3>
+        <p>Use a fluoride toothpaste and brush for at least 2 minutes, especially before bedtime.</p>
+      </div>
+      <div class="tip">
+        <div class="tip-number">2</div>
+        <h3>Floss Every Day</h3>
+        <p>Flossing removes food and plaque between teeth that brushing alone cannot reach.</p>
+      </div>
+      <div class="tip">
+        <div class="tip-number">3</div>
+        <h3>Eat a Tooth-Friendly Diet</h3>
+        <p>Limit sugary snacks and drinks. Include calcium-rich foods like milk and leafy greens.</p>
+      </div>
+      <div class="tip">
+        <div class="tip-number">4</div>
+        <h3>Stay Hydrated</h3>
+        <p>Drink water throughout the day to wash away bacteria and keep your mouth moist.</p>
+      </div>
+      <div class="tip">
+        <div class="tip-number">5</div>
+        <h3>Regular Dental Check-Ups</h3>
+        <p>Visit your dentist every 6 months to prevent problems before they become serious.</p>
+      </div>
+      <div class="tip">
+        <div class="tip-number">6</div>
+        <h3>Avoid Smoking</h3>
+        <p>Tobacco use increases the risk of gum disease, bad breath, and oral cancer.</p>
+      </div>
+    </div>
+  </section>
 
-  <<input type="text" id="searchBox" placeholder="Search tips...">
-<ul id="tipsList">
-  <li>Brush twice a day</li>
-  <li>Floss daily</li>
-  <li>Drink plenty of water</li>
-</ul>
+  <!-- Latest Dental Products -->
+  <section>
+    <h2>Latest Dental Health Products</h2>
+    <div class="products-container">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Electric+Toothbrush" alt="Electric Toothbrush">
+        <h3>Smart Electric Toothbrush</h3>
+        <p>Tracks your brushing habits via a mobile app and ensures you never miss a spot.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Water+Flosser" alt="Water Flosser">
+        <h3>Portable Water Flosser</h3>
+        <p>Removes plaque and food debris with powerful water jets — perfect for braces and implants.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Whitening+Kit" alt="Whitening Kit">
+        <h3>Teeth Whitening Kit</h3>
+        <p>Safe, dentist-approved home whitening kit for a brighter smile without sensitivity.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=AI+Dental+Scanner" alt="AI Dental Scanner">
+        <h3>AI-Powered Dental Scanner</h3>
+        <p>Helps detect early signs of cavities and gum problems using artificial intelligence.</p>
+      </div>
+    </div>
+  </section>
 
-<script>
-const searchBox = document.getElementById("searchBox");
-const tips = document.querySelectorAll("#tipsList li");
-
-searchBox.addEventListener("input", function() {
-  const text = searchBox.value.toLowerCase();
-  tips.forEach(tip => {
-    tip.style.display = tip.textContent.toLowerCase().includes(text) ? "" : "none";
-  });
-});
-</script>>
-    <h2>Daily Dental Tips</h2>
-    <ul>
-      <li>Brush twice a day with fluoride toothpaste.</li>
-      <li>Floss daily to remove hidden food particles.</li>
-      <li>Visit your dentist every 6 months.</li>
-      <li>Limit sugary foods and drinks.</li>
-      <li>Drink plenty of water for oral hydration.</li>
-    </ul>
-  </<input type="text" id="searchBox" placeholder="Search tips...">
-<ul id="tipsList">
-  <li>Brush twice a day</li>
-  <li>Floss daily</li>
-  <li>Drink plenty of water</li>
-</ul>
-
-<script>
-const searchBox = document.getElementById("searchBox");
-const tips = document.querySelectorAll("#tipsList li");
-
-searchBox.addEventListener("input", function() {
-  const text = searchBox.value.toLowerCase();
-  tips.forEach(tip => {
-    tip.style.display = tip.textContent.toLowerCase().includes(text) ? "" : "none";
-  });
-});
-</script>>
-
-  <footer>
-    <p>© 2025 DentExplorer</p>
-  </footer>
 </body>
-</<iframe width="350" height="200" 
-src="https://www.youtube.com/embed/VIDEO_ID" 
-frameborder="0" allowfullscreen></iframe>>
+</html>
